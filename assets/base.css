@@ -3521,7 +3521,7 @@ details-disclosure>details {
   }
 }
 
-svg[data-feather] {
+svg.feather {
   width: 18px;
   height: 20px;
 }
