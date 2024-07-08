@@ -2827,6 +2827,7 @@ details[open]>.header__submenu {
 
 .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
+  color: black;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
