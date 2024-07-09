@@ -262,7 +262,7 @@ a.product__text {
   margin: 0;
 }
 
-.product_subtitle {
+.product__subtitle {
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
