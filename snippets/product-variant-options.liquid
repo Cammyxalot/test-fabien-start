@@ -5,15 +5,13 @@
   - product: {Object} product object.
   - option: {Object} current product_option object.
   - block: {Object} block object.
-  - picker_type: {String} type of picker to dispay
-
-
+  - picker_type: {String} type of picker to display
 
   Usage:
   {% render 'product-variant-options',
     product: product,
     option: option,
-    block: block
+    block: block,
     picker_type: picker_type
   %}
 {% endcomment %}
@@ -29,24 +27,24 @@
 {%- for value in option.values -%}
   {%- liquid
     assign option_disabled = true
-    assign color_metafields = null
+    assign color_metafield = null
 
     for option1_name in variants_option1_arr
       case option.position
         when 1
           if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
             assign option_disabled = false
-            assign color_metafields = product.variants[forloop.index0].metafields.custom.product_color.value
+            assign color_metafield = product.variants[forloop.index0].metafields.custom.product_color.value
           endif
         when 2
           if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
             assign option_disabled = false
-            assign color_metafields = product.variants[forloop.index0].metafields.custom.product_color.value
+            assign color_metafield = product.variants[forloop.index0].metafields.custom.product_color.value
           endif
         when 3
           if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
             assign option_disabled = false
-            assign color_metafields = product.variants[forloop.index0].metafields.custom.product_color.value
+            assign color_metafield = product.variants[forloop.index0].metafields.custom.product_color.value
           endif
       endcase
     endfor
@@ -106,8 +104,6 @@
       {% if option.name == 'Couleur' %}
         style="background-color: {{ color_metafield }};"
         class="color-pills"
-      {% else %}
-        class="size-pills"
       {% endif %}
     >
       {% unless option.name == 'Couleur' %}
@@ -133,3 +129,17 @@
     </option>
   {%- endif -%}
 {%- endfor -%}
+
+<style>
+  .swatch-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    border: 2px solid #000; /* Optional: Adjust border color */
+  }
+  .swatch-option input[type='radio'] {
+    display: none;
+  }
+</style>
