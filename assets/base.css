@@ -3551,3 +3551,7 @@ svg.feather {
 .shopify-payment-button {
   display: none;
 }
+
+.product-form {
+  flex-grow: 1;
+}
