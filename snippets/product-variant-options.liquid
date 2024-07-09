@@ -60,9 +60,7 @@
       assign swatch_value = null
     endif
   -%}
-  <script>
-    console.log('test',{{product.variants[forloop.index0].metafields.custom.product_color.value | json}})
-  </script>
+
   {%- capture input_id -%}
     {{ section.id }}-{{ option.position }}-{{ forloop.index0 -}}
   {%- endcapture -%}
