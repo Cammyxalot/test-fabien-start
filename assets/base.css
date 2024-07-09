@@ -3529,3 +3529,7 @@ svg.feather {
   width: 18px;
   height: 20px;
 }
+
+.color-pills:checked {
+  background-color: none;
+}
