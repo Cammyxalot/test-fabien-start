@@ -373,8 +373,6 @@ a.product__text {
 
 .product-form__buttons {
   max-width: 44rem;
-  border-radius: 45px;
-  background-color: black;
 }
 
 .product--no-media .product__info-container>modal-opener {
