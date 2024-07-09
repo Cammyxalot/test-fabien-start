@@ -32,8 +32,6 @@
     assign money_price_max = price_max | money_with_currency
   endif
 
-  assign percent_off = 100 | minus: price | times: 100 | divided_by: compare_at_price
-
   if target == product and product.price_varies
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
@@ -120,7 +118,7 @@
   </div>
   {%- if show_badges -%}
     <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-      {{ percent_off }}
+      {{ 'products.product.on_sale' | t }}
     </span>
 
     <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
