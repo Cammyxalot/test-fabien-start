@@ -3547,3 +3547,7 @@ svg.feather {
 .product-form__input--pill input[type='radio']:checked+label.color-pills {
   box-shadow: inset 0 0 0 .4rem rgb(var(--color-background));
 }
+
+.shopify-payment-button {
+  display: none;
+}
