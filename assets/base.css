@@ -1938,7 +1938,7 @@ z-index: 1;
   background-color: transparent;
   border: 0;
   padding: 0 0.5rem;
-  width: 100%;
+  /* width: 100%; */
   -webkit-appearance: none;
   appearance: none;
 }
