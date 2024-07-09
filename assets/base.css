@@ -3558,6 +3558,7 @@ svg.feather {
 }
 
 .quantity-buy-button {
+  width: 100%;
   display: inline-flex;
   align-items: center;
   gap: 32px;
