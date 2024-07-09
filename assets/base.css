@@ -3588,7 +3588,9 @@ svg.feather {
 }
 
 .custom-gallery-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  column-gap: 2.4rem;
 }
 
 .custom-gallery {
