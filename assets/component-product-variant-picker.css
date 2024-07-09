@@ -79,6 +79,10 @@ variant-selects {
   position: relative;
 }
 
+.product-form__input--pill input[type='radio']+label:(:not(:last-child)) {
+  margin-right: 20px;
+}
+
 .product-form__input--pill input[type='radio']+label:before {
   content: '';
   position: absolute;
