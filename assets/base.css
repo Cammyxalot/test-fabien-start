@@ -3530,10 +3530,17 @@ svg.feather {
   height: 20px;
 }
 
-.color-pills {
+/* .color-pills {
   background-color: transparent !important;
-}
+} */
 
-.product-form__input--pill input[type='radio']:checked+label.color-pills {
-  background-size: 50%;
+.product-form__input--pill input[type='radio']:checked+label.color-pills::after {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  -moz-border-radius: 7.5px;
+  -webkit-border-radius: 7.5px;
+  border-radius: 7.5px;
+  background-color: #69b6d5;
 }
