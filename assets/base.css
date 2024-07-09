@@ -3530,6 +3530,6 @@ svg.feather {
   height: 20px;
 }
 
-.color-pills:checked {
+.color-pills {
   background-color: transparent !important;
 }
