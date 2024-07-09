@@ -104,9 +104,11 @@
       {% endif %}
     >
     <label
-      class="color-pills"
       for="{{ input_id }}"
-      style="background-color: {{ color_metafield }};"
+      {% if option.name == 'Couleur' %}
+        style="background-color: {{ color_metafield }};"
+        class="color-pills"
+      {% endif %}
     >
       {% unless option.name == 'Couleur' %}
         {{ value -}}
