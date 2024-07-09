@@ -26,7 +26,7 @@
   assign product_form_id = 'product-form-' | append: section.id
 -%}
 <script>
-  console.log("test",{{ variant.metafields.custom.product_color.value | json }})
+  console.log("test",{{ variant.metafields.variant.color.value | json }})
 </script>
 {%- for value in option.values -%}
   {%- liquid
