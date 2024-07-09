@@ -262,6 +262,11 @@ a.product__text {
   margin: 0;
 }
 
+.accordion__content {
+  font-size: 12px;
+  font-weight: 400;
+}
+
 .product__subtitle,
 .accordion__title {
   font-size: 12px;
