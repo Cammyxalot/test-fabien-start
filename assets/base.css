@@ -3587,14 +3587,6 @@ svg.feather {
   flex-direction: column;
 }
 
-.custom-gallery-wrapper {
-  display: grid;
-  grid-template-columns: 9rem 1fr;
-  column-gap: 2.4rem;
-}
+.custom-gallery-wrapper {}
 
-.custom-gallery {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
+.custom-gallery {}
