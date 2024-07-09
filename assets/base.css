@@ -3555,3 +3555,9 @@ svg.feather {
 .product-form {
   flex-grow: 1;
 }
+
+.quantity-buy-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 32px;
+}
