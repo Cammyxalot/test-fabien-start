@@ -1953,6 +1953,7 @@ z-index: 1;
   align-items: center;
   justify-content: center;
   color: rgb(var(--color-foreground));
+  background-color: black;
   padding: 0;
 }
 
