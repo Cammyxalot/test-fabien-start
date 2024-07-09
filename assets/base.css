@@ -3531,8 +3531,8 @@ svg.feather {
 }
 
 .color-pills {
-  height: 24px !important;
-  width: 24px !important;
+  height: 24px;
+  width: 24px;
 }
 
 .size-pills {
