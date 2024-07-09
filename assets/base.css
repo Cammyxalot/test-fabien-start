@@ -1971,7 +1971,7 @@ z-index: 1;
 
 .quantity__button:focus-visible,
 .quantity__input:focus-visible {
-  /* background-color: rgb(var(--color-background)); */
+  background-color: rgb(var(--color-background));
   z-index: 2;
 }
 
@@ -1984,7 +1984,7 @@ z-index: 1;
 .quantity__button:not(:focus-visible):not(.focused),
 .quantity__input:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
-  background-color: inherit;
+  /* background-color: inherit; */
 }
 
 .quantity__input:-webkit-autofill,
