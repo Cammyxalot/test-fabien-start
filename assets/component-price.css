@@ -20,6 +20,7 @@
 
 .price .price-item {
   font-size: 20px;
+  font-weight: 800;
   display: inline-block;
   margin: 0 1rem 0 0;
 }
