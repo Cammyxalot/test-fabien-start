@@ -189,6 +189,8 @@
   background-color: black;
   color: white;
   border-radius: 45px;
+  font-size: 19px;
+  font-weight: 700;
 }
 
 .no-js .product-form__submit.button--secondary {
