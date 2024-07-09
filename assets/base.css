@@ -1954,6 +1954,9 @@ z-index: 1;
   color: white;
   background-color: black;
   padding: 0;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
 }
 
 .quantity__button:first-child {
