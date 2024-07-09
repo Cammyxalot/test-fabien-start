@@ -3534,6 +3534,6 @@ svg.feather {
   background-color: transparent !important;
 } */
 
-.product-form__input--pill input[type='radio']:checked+label.color-pills::after {
+.product-form__input--pill input[type='radio']:checked+label.color-pills {
   box-shadow: inset 0 0 0 .4rem rgb(var(--color-background));
 }
