@@ -3531,5 +3531,5 @@ svg.feather {
 }
 
 .color-pills:checked {
-  background-color: transparent;
+  background-color: transparent !important;
 }
