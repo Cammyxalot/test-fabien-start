@@ -3576,7 +3576,7 @@ svg.feather {
   font-weight: 400;
 }
 
-.newsletter-form__field-wrapper {
+.field {
   border: 1px solid black;
   border-radius: 45px;
 }
