@@ -187,6 +187,8 @@
 .product-form__submit {
   margin-bottom: 1rem;
   background-color: black;
+  color: white;
+  border-radius: 45px;
 }
 
 .no-js .product-form__submit.button--secondary {
