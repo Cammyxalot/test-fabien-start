@@ -3564,3 +3564,7 @@ svg.feather {
   align-items: center;
   gap: 32px;
 }
+
+.footer-block__newsletter h2 {
+  font-size: 20px;
+}
