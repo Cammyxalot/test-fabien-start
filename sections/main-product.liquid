@@ -93,10 +93,10 @@
                 </p>
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
-                  <h1>{{ product.metafields.descriptors.title.value | escape }}</h1>
+                  {% comment %} <h1>{{ product.metafields.descriptors.title.value | escape }}</h1> {% endcomment %}
                   <a href="{{ product.url }}" class="product__title">
                     <h2 class="h2">
-                      {{ product.metafields.descriptors.subtitle.value }}
+                      {{ product.metafields.descriptors.subtitle.value | escape }}
                     </h2>
                   </a>
                 </div>
