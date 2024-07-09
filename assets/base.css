@@ -3531,7 +3531,8 @@ svg.feather {
 }
 
 .color-pills {
-  background-color: transparent !important;
+  height: 24px;
+  width: 24px;
 }
 
 .product-form__input--pill input[type='radio']:checked+label.color-pills {
