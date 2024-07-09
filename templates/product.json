@@ -41,15 +41,31 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
+        "collapsible_tab_HACiMc": {
+          "type": "collapsible_tab",
           "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "content": "<p>La chemise Regular Fit - Resort \"Notorious BIG\" est un must-have pour les hommes qui recherchent un style décontracté mais tendance. Cette chemise rose est dotée d'imprimés inspirés de la culture urbaine, offrant ainsi un look unique et branché. La coupe régulière assure un ajustement confortable et flatteur pour toutes les morphologies.<\/p><p>Fabriquée à partir de matériaux de qualité supérieure, cette chemise est à la fois durable et confortable, parfait pour une utilisation quotidienne ou pour des occasions spéciales. Les détails de finition, comme le col boutonné et les poignets ajustables, ajoutent une touche de sophistication à cette chemise décontractée.<\/p><p>Que vous soyez en vacances ou simplement en train de vous détendre en ville, la chemise Regular Fit - Resort \"Notorious BIG\" est un choix parfait pour compléter votre garde-robe. Commandez dès maintenant pour ajouter une touche de fraîcheur à votre look.<\/p>",
+            "page": ""
           }
         },
-        "share": {
-          "type": "share",
+        "collapsible_tab_gh4tLP": {
+          "type": "collapsible_tab",
           "settings": {
-            "share_label": "Share"
+            "heading": "composition & entretien",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.composition | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_NbqMhA": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "livraison & retour",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.shipping | metafield_tag }}<\/p>",
+            "page": ""
           }
         }
       },
@@ -59,8 +75,9 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "share"
+        "collapsible_tab_HACiMc",
+        "collapsible_tab_gh4tLP",
+        "collapsible_tab_NbqMhA"
       ],
       "settings": {
         "enable_sticky_info": true,
