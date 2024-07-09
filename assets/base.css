@@ -3587,4 +3587,12 @@ svg.feather {
   flex-direction: column;
 }
 
-.custom-gallery-wrapper {}
+.custom-gallery-wrapper {
+  display: flex;
+}
+
+.custom-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
