@@ -277,6 +277,8 @@ a.product__text {
 }
 
 .product .price .badge {
+  font-size: 10px;
+  font-weight: 800;
   margin-bottom: 0.5rem;
 }
 
