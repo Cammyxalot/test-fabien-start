@@ -3570,3 +3570,8 @@ svg.feather {
   font-weight: 600;
   text-transform: uppercase;
 }
+
+.footer-block__newsletter p {
+  font-size: 12px;
+  font-weight: 400;
+}
