@@ -256,7 +256,7 @@ a.product__text {
   margin-bottom: 1.5rem;
 }
 
-.product__title>* {
+.product__title h1 {
   font-size: 20px;
   font-weight: 600;
   margin: 0;
