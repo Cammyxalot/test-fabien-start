@@ -94,7 +94,6 @@
       name="{{ option.name }}"
       value="{{ value | escape }}"
       form="{{ product_form_id }}"
-      class="size-pills"
       {% if option.selected_value == value %}
         checked
       {% endif %}
@@ -107,6 +106,8 @@
       {% if option.name == 'Couleur' %}
         style="background-color: {{ color_metafield }};"
         class="color-pills"
+      {% else %}
+        class="size-pills"
       {% endif %}
     >
       {% unless option.name == 'Couleur' %}
