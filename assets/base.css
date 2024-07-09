@@ -3568,4 +3568,5 @@ svg.feather {
 .footer-block__newsletter h2 {
   font-size: 20px;
   font-weight: 600;
+  text-transform: uppercase;
 }
