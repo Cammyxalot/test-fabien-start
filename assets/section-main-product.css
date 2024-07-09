@@ -256,16 +256,8 @@ a.product__text {
   margin-bottom: 1.5rem;
 }
 
-.product__title h1 {
-  font-size: 20px;
-  font-weight: 600;
+.product__title>* {
   margin: 0;
-}
-
-.product__subtitle {
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 
 .product__title>a {
@@ -285,9 +277,6 @@ a.product__text {
 }
 
 .product .price .badge {
-  font-size: 10px;
-  font-weight: 800;
-  padding: 5px 8px;
   margin-bottom: 0.5rem;
 }
 
@@ -309,9 +298,9 @@ a.product__text {
     max-width: 60rem;
   }
 
-  /* .product__info-container .price--on-sale .price-item--regular {
+  .product__info-container .price--on-sale .price-item--regular {
     font-size: 1.6rem;
-  } */
+  }
 
   .product__info-container>*:first-child {
     margin-top: 0;
