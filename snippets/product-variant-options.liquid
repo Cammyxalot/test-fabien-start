@@ -103,10 +103,11 @@
         class="disabled"
       {% endif %}
     >
-    <label class="color-pills" for="{{ input_id }}" 
-      {% if option.name == 'Couleur' %}
-        style="background-color: {{ color_metafield }};">
-      {%endif%}
+    <label
+      class="color-pills"
+      for="{{ input_id }}"
+      style="background-color: {{ color_metafield }};"
+    >
       {% unless option.name == 'Couleur' %}
         {{ value -}}
       {% endunless %}
