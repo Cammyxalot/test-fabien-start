@@ -59,11 +59,12 @@
         {{ 'accessibility.skip_to_product_info' | t }}
       </a>
     {%- endunless -%}
-    {% comment %}
+    <div>
       <ul
         id="Slider-Gallery-{{ section.id }}{{ id_append }}"
         class="product__media-list contains-media grid grid--peek list-unstyled slider slider--mobile"
-        role="list">
+        role="list"
+      >
         {%- if product.selected_or_first_available_variant.featured_media != null -%}
           {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
           <li
@@ -120,7 +121,7 @@
           {%- endunless -%}
         {%- endfor -%}
       </ul>
-    {% endcomment %}
+    </div>
     {%- unless is_duplicate -%}
       <div class="slider-buttons no-js-hidden quick-add-hidden{% if hide_mobile_slider %} small-hide{% endif %}">
         <button
