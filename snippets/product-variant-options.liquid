@@ -96,7 +96,11 @@
         class="disabled"
       {% endif %}
     >
-    <label class="color-pills" for="{{ input_id }}">
+    <label
+      class="color-pills"
+      for="{{ input_id }}"
+      style="background-color: {{ variant.metafields.custom.product_color.value }};"
+    >
       {{ value -}}
       {{ label_unavailable }}
     </label>
