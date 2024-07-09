@@ -3581,3 +3581,12 @@ svg.feather {
   border: 1px solid black;
   border-radius: 45px;
 }
+
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider li {
+  width: 100%;
+}
