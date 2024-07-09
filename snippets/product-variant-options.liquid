@@ -102,7 +102,9 @@
       {% endif %}
     >
     <label class="color-pills" for="{{ input_id }}" style="background-color: {{ color_metafield }};">
-      {{ value -}}
+      {% unless option.name == 'Couleur' %}
+        {{ value -}}
+      {% endunless %}
       {{ label_unavailable }}
     </label>
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
