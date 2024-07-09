@@ -31,9 +31,8 @@
     assign money_price_min = price_min | money_with_currency
     assign money_price_max = price_max | money_with_currency
   endif
-  assign discount_percentage = 100 | minus: (current_price | times: 100 | divided_by: original_price) | round
 
-  assign percent_off = compare_at_price | minus: price | times: 100.0 | divided_by: compare_at_price
+  assign percent_off = compare_at_price | minus: (price | times: 100.0 | divided_by: compare_at_price) | round
 
   if target == product and product.price_varies
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
