@@ -71,7 +71,7 @@
     </span>
   {%- endcapture %}
 
-  {%- if picker_type == 'swatch' -%}
+  {%- if picker_type == 'swatch' and color_metafield -%}
     {% assign checked = false %}
     {% if option.selected_value == value %}
       {% assign checked = true %}
@@ -101,7 +101,7 @@
         class="disabled"
       {% endif %}
     >
-    <label class="color-pills" for="{{ input_id }}">
+    <label class="color-pills" for="{{ input_id }}" style="background-color: {{ color_metafield }};">
       {{ value -}}
       {{ label_unavailable }}
     </label>
