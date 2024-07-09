@@ -3536,6 +3536,7 @@ svg.feather {
 
 .product-form__input--pill input[type='radio']:checked+label.color-pills::after {
   content: '';
+  position: absolute;
   display: inline-block;
   width: 15px;
   height: 15px;
