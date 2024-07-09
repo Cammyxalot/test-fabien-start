@@ -6,6 +6,7 @@
   - option: {Object} current product_option object.
   - block: {Object} block object.
   - picker_type: {String} type of picker to dispay
+  - color: {String} color of the variant
 
 
   Usage:
@@ -96,11 +97,7 @@
         class="disabled"
       {% endif %}
     >
-    <label
-      class="color-pills"
-      for="{{ input_id }}"
-      style="background-color: {{ variant.metafields.custom.product_color.value }};"
-    >
+    <label class="color-pills" for="{{ input_id }}">
       {{ value -}}
       {{ label_unavailable }}
     </label>
@@ -122,8 +119,3 @@
     </option>
   {%- endif -%}
 {%- endfor -%}
-<style>
-  .color-pills {
-      background-color: {{ variant.metafields.custom.product_color.value }};
-  }
-</style>
