@@ -399,9 +399,11 @@
             </div>
             {% render 'icon-caret' %}
           </summary>
-          <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-            <a href="{{ subitem.url }}">{{ subitem.title }}</a>
-          </div>
+          {% for subitem in item.links %}
+            <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+              <a href="{{ subitem.url }}">{{ subitem.title }}</a>
+            </div>
+          {% endfor %}
         </details>
       </div>
     {% endfor %}
