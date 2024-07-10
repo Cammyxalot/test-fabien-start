@@ -3695,6 +3695,10 @@ a {
   color: #999999;
 }
 
+.size-wrapper {
+  position: relative;
+}
+
 .size-span {
   text-decoration: underline;
   font-size: 12px;
