@@ -3705,8 +3705,10 @@ a {
 
 .size-guide-pop-over {
   position: absolute;
-  top: -50%;
-  right: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 3;
   background-color: #fff;
   text-align: center;
