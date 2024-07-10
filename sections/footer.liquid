@@ -373,9 +373,8 @@
           </ul>
         </div>
         <div>
-          <a></a>
-
           {% for item in main_menu.links %}
+            <a href="{{ item.url }}">{{ item.title }}</a>
             <ul>
               {% for subitem in item.links %}
                 <li>
