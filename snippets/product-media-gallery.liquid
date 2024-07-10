@@ -394,6 +394,7 @@
 
       // Add 'is-active' class to the clicked corresponding right photo
       const activePhoto = rightUl.querySelector(`li[data-order="${order}"]`);
+      console.log('activePhoto', activePhoto);
       if (activePhoto) {
         activePhoto.classList.add('is-active');
       }
