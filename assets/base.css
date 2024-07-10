@@ -3611,6 +3611,10 @@ svg.feather {
     justify-content: center;
     gap: 0;
   }
+
+  .slider li {
+    width: fit-content;
+  }
 }
 
 .custom-gallery:first-child div {
