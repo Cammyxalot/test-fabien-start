@@ -385,6 +385,7 @@
 
   leftUl.addEventListener('click', function (event) {
     const order = event.target.getAttribute('data-order');
+    console.log(event.target);
     console.log('order', order);
     // Remove 'is-active' class from all right photos
     rightPhotos.forEach((photo) => {
