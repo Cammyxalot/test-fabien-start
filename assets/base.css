@@ -3705,6 +3705,7 @@ a {
 
 .size-guide-pop-over {
   position: absolute;
+  display: none;
   top: 0;
   left: 0;
   right: 0;
@@ -3715,6 +3716,7 @@ a {
   animation: popup 0.5s ease-in-out both 0.7s;
   border: 1px solid lightgray;
   border-radius: 8px;
+  height: fit-content;
 }
 
 .pop-over-close {
