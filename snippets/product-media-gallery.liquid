@@ -74,7 +74,7 @@
               data-media-id="{{ section.id }}-{{ featured_media.id }}"
             >
               {%- assign media_position = 1 -%}
-              {% render 'custom-thumbnail',
+              {% render 'product-thumbnail',
                 media: featured_media,
                 media_count: media_count,
                 position: media_position,
@@ -105,7 +105,7 @@
                     assign lazy_load = true
                   endif
                 -%}
-                {% render 'custom-thumbnail',
+                {% render 'product-thumbnail',
                   media: media,
                   media_count: media_count,
                   position: media_position,
@@ -377,17 +377,16 @@
 </media-gallery>
 
 <script>
-  const GALLERY_WRAPPER = '.custom-gallery-wrapper';
-  const RIGHT_UL = '.custom-gallery:last-child ul';
-  const LEFT_UL = '.custom-gallery:first-child ul';
-  const galleryWrapper = document.querySelector(GALLERY_WRAPPER);
-  const rightUl = galleryWrapper.querySelector(RIGHT_UL);
-  const leftUl = galleryWrapper.querySelector(LEFT_UL);
+  const galleryWrapper = document.querySelector('.custom-gallery-wrapper');
+  const rightUl = galleryWrapper.querySelector('.custom-gallery:last-child ul');
+  const leftUl = galleryWrapper.querySelector('.custom-gallery:first-child ul');
   const rightPhotos = rightUl.querySelectorAll('li');
   const leftPhotos = leftUl.querySelectorAll('li');
+  console.log('rightli', rightUl.querySelector(`li[data-order="1"]`));
   leftPhotos.forEach((leftPhoto) => {
     leftPhoto.addEventListener('click', function () {
       const order = leftPhoto.getAttribute('data-order');
+      console.log('order', order);
       // Remove 'is-active' class from all right photos
       rightPhotos.forEach((photo) => {
         photo.classList.remove('is-active');
@@ -395,6 +394,8 @@
 
       // Add 'is-active' class to the clicked corresponding right photo
       const activePhoto = rightUl.querySelector(`li[data-order="${order}"]`);
+      console.log('rightUl', rightUl);
+      console.log('activePhoto', activePhoto);
       if (activePhoto) {
         activePhoto.classList.add('is-active');
       }
