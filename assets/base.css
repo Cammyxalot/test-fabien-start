@@ -3590,6 +3590,7 @@ svg.feather {
 
 .custom-gallery-wrapper {
   display: flex;
+  gap: 24px;
 }
 
 .custom-gallery:first-child div {
