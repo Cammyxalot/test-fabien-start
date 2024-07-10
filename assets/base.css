@@ -3719,6 +3719,10 @@ a {
   height: fit-content;
 }
 
+.size-guide-pop-over.active {
+  display: block;
+}
+
 .pop-over-close {
   position: absolute;
   top: 10px;
