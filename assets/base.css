@@ -3713,7 +3713,8 @@ a {
   background-color: #fff;
   text-align: center;
   animation: popup 0.5s ease-in-out both 0.7s;
-  border: 3px solid #000;
+  border: 1px solid #000;
+  border-radius: 8px;
 }
 
 .pop-over-close {
