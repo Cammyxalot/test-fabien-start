@@ -3632,10 +3632,15 @@ svg.feather {
 
 }
 
+.social-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .social-list {
   display: flex;
   gap: 20px;
-
 }
 
 li {
