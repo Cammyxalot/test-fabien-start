@@ -3767,4 +3767,8 @@ a {
   .subfooter-element:last-child {
     display: none;
   }
+
+  .subfooter-element {
+    margin-top: 2rem;
+  }
 }
