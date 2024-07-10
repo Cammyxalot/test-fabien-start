@@ -3592,8 +3592,13 @@ svg.feather {
   display: flex;
 }
 
-.custom-gallery {
+.custom-gallery:first-child {
   flex: 1;
+}
+
+.custom-gallery:first-child img {
+  width: 90px;
+  height: 135px;
 }
 
 .custom-gallery:last-child {
