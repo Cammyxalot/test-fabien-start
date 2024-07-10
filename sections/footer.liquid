@@ -373,22 +373,21 @@
           </li>
         </ul>
       </div>
-      {% comment %}
-        <div class="menu-main">
-          {% for item in main_menu.links %}
-            <div class="menu-wrapper">
-              <a class="menu-main-title" href="{{ item.url }}">{{ item.title }}</a>
-              <ul>
-                {% for subitem in item.links %}
-                  <li>
-                    <a href="{{ subitem.url }}">{{ subitem.title }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          {% endfor %}
-        </div>
-      {% endcomment %}
+
+      <div class="menu-main">
+        {% for item in main_menu.links %}
+          <div class="menu-wrapper">
+            <a class="menu-main-title" href="{{ item.url }}">{{ item.title }}</a>
+            <ul>
+              {% for subitem in item.links %}
+                <li>
+                  <a href="{{ subitem.url }}">{{ subitem.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
     </div>
     {% for item in main_menu.links %}
       <div class="product__accordion accordion">
