@@ -3596,7 +3596,7 @@ svg.feather {
   flex: 1;
 }
 
-.custom-gallery:first-child>div {
+.custom-gallery:first-child div {
   width: 90px;
   height: 135px;
 }
