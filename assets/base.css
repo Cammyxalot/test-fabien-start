@@ -3533,20 +3533,6 @@ details-disclosure>details {
   }
 }
 
-svg.feather {
-  width: 18px;
-  height: 20px;
-}
-
-.color-pills {
-  height: 24px;
-  width: 24px;
-}
-
-.size-pills {
-  height: 32px;
-  width: 32px;
-}
 
 .product-form__input--pill input[type='radio']:checked+label.color-pills {
   box-shadow: inset 0 0 0 .4rem rgb(var(--color-background));
@@ -3572,6 +3558,21 @@ svg.feather {
 
 span.product__media-icon.motion-reduce.quick-add-hidden.product__media-icon--lightbox {
   display: none;
+}
+
+svg.feather {
+  width: 18px;
+  height: 20px;
+}
+
+.color-pills {
+  height: 24px;
+  width: 24px;
+}
+
+.size-pills {
+  height: 32px;
+  width: 32px;
 }
 
 .shopify-payment-button {
@@ -3623,6 +3624,12 @@ span.product__media-icon.motion-reduce.quick-add-hidden.product__media-icon--lig
   justify-content: space-around;
   align-items: center;
   padding: 0 1rem;
+}
+
+.subfooter-wrapper li svg {
+  width: 20px;
+  height: 20px;
+
 }
 
 li {
