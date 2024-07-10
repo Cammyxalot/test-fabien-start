@@ -3657,6 +3657,14 @@ svg.feather {
 
 }
 
+@media screen and (max-width: 990px) {
+  .subfooter-main {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+}
+
 .menu-wrapper {
   display: flex;
   flex-direction: column;
