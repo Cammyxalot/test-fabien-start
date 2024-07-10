@@ -3698,4 +3698,6 @@ a {
 
 .size-span {
   text-decoration: underline;
+  font-size: 12px;
+  font-weight: 400;
 }
