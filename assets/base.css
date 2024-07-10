@@ -3644,10 +3644,13 @@ svg.feather {
   padding: 0;
 }
 
+.menu-main {
+  display: flex;
+}
+
 .menu-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   gap: 20px;
 }
 
