@@ -382,7 +382,7 @@
   const leftUl = galleryWrapper.querySelector('.custom-gallery:first-child ul');
   const rightPhotos = rightUl.querySelectorAll('li');
   const leftPhotos = leftUl.querySelectorAll('li');
-
+  console.log('rightli', rightUl.querySelector(`li[data-order="1"]`));
   leftPhotos.forEach((leftPhoto) => {
     leftPhoto.addEventListener('click', function () {
       const order = leftPhoto.getAttribute('data-order');
