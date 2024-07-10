@@ -3743,3 +3743,7 @@ a {
   max-width: 100%;
   max-height: 100%;
 }
+
+.title-subwrapper {
+  display: inline-flex;
+}
