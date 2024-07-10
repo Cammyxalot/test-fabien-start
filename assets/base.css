@@ -3592,10 +3592,6 @@ svg.feather {
   display: flex;
 }
 
-.custom-gallery:first-child {
-  flex: 1;
-}
-
 .custom-gallery:first-child div {
   width: 90px !important;
   height: 135px;
