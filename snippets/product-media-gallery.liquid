@@ -393,7 +393,7 @@
       });
 
       // Add 'is-active' class to the clicked corresponding right photo
-      const activePhoto = document.querySelector(`#right-ul li[data-order="${order}"]`);
+      const activePhoto = rightUl.querySelector(`li[data-order="${order}"]`);
       if (activePhoto) {
         activePhoto.classList.add('is-active');
       }
