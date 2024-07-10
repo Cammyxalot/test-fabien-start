@@ -6,6 +6,12 @@
   gap: 0;
 }
 
+@media screen and (max-width: 750px) {
+  .product.grid {
+    gap: 60px;
+  }
+}
+
 .product--no-media {
   max-width: 57rem;
   margin: 0 auto;
