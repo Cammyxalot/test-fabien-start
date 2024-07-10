@@ -380,22 +380,22 @@
   const leftUl = document.querySelector('.custom-gallery-wrapper');
   console.log(leftUl);
   const rightUl = document.querySelector('.custom-gallery-wrapper:last-child');
-  // const rightPhotos = rightUl.querySelectorAll('li');
+  const rightPhotos = rightUl.querySelectorAll('li');
 
-  // leftUl.addEventListener('click', function (event) {
-  //   if (event.target.tagName === 'IMG') {
-  //     const order = event.target.getAttribute('data-order');
+  leftUl.addEventListener('click', function (event) {
+    if (event.target.tagName === 'IMG') {
+      const order = event.target.getAttribute('data-order');
 
-  //     // Remove 'is-active' class from all right photos
-  //     rightPhotos.forEach((photo) => {
-  //       photo.classList.remove('is-active');
-  //     });
+      // Remove 'is-active' class from all right photos
+      rightPhotos.forEach((photo) => {
+        photo.classList.remove('is-active');
+      });
 
-  //     // Add 'is-active' class to the clicked corresponding right photo
-  //     const activePhoto = rightUl.querySelector(`li[data-order="${order}"]`);
-  //     if (activePhoto) {
-  //       activePhoto.classList.add('is-active');
-  //     }
-  //   }
-  // });
+      // Add 'is-active' class to the clicked corresponding right photo
+      const activePhoto = rightUl.querySelector(`li[data-order="${order}"]`);
+      if (activePhoto) {
+        activePhoto.classList.add('is-active');
+      }
+    }
+  });
 </script>
