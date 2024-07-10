@@ -3601,6 +3601,16 @@ svg.feather {
   gap: 24px;
 }
 
+@media screen and (max-width: 750px) {
+  .custom-gallery-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .custom-gallery-wrapper:first-child {
+    flex-direction: row;
+  }
+}
+
 .custom-gallery:first-child div {
   width: 90px !important;
   height: 135px;
@@ -3657,7 +3667,7 @@ svg.feather {
 
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 750px) {
   .subfooter-main {
     justify-content: center;
     margin-top: 2rem;
