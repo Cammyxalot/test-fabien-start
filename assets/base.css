@@ -3602,19 +3602,8 @@ svg.feather {
 }
 
 @media screen and (max-width: 750px) {
-  .custom-gallery-wrapper {
-    flex-direction: column-reverse;
-  }
+  .custom-gallery-wrapper {}
 
-  .slider {
-    flex-direction: row;
-    justify-content: center;
-    gap: 0;
-  }
-
-  .slider li {
-    width: fit-content;
-  }
 }
 
 .custom-gallery:first-child div {
