@@ -3552,20 +3552,6 @@ svg.feather {
   box-shadow: inset 0 0 0 .4rem rgb(var(--color-background));
 }
 
-.shopify-payment-button {
-  display: none;
-}
-
-.product-form-wrapper {
-  flex-grow: 1;
-}
-
-.quantity-buy-button {
-  width: 100%;
-  display: inline-flex;
-  align-items: center;
-  gap: 32px;
-}
 
 .footer-block__newsletter h2 {
   font-size: 20px;
@@ -3586,6 +3572,21 @@ svg.feather {
 
 span.product__media-icon.motion-reduce.quick-add-hidden.product__media-icon--lightbox {
   display: none;
+}
+
+.shopify-payment-button {
+  display: none;
+}
+
+.product-form-wrapper {
+  flex-grow: 1;
+}
+
+.quantity-buy-button {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 32px;
 }
 
 .slider {
