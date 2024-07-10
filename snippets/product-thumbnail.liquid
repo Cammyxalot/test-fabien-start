@@ -88,7 +88,8 @@
     {%- endif -%}
   </noscript>
 
-  <modal-opener
+  <a
+    data-fancybox="gallery"
     class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden"
     data-modal="#ProductModal-{{ modal_id }}"
   >
@@ -126,7 +127,7 @@
         </span>
       </button>
     {% endcomment %}
-  </modal-opener>
+  </a>
 
   {%- if media.media_type != 'image' -%}
     {%- if media.media_type == 'model' -%}
