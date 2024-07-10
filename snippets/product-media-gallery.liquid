@@ -378,8 +378,8 @@
 
 <script>
   const galleryWrapper = document.querySelector('.custom-gallery-wrapper');
-  const rightUl = galleryWrapper.querySelector('.custom-gallery:last-child');
-  console.log(rightUl);
+  const rightUl = galleryWrapper.querySelector('.custom-gallery:last-child ul');
+  const leftUl = galleryWrapper.querySelector('.custom-gallery:first-child ul');
   const rightPhotos = rightUl.querySelectorAll('li');
 
   leftUl.addEventListener('click', function (event) {
