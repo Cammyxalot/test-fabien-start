@@ -3749,3 +3749,7 @@ a {
   justify-content: space-between;
   width: 100%;
 }
+
+.footer__content-bottom {
+  padding: 0 1rem;
+}
