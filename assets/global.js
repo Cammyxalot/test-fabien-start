@@ -582,7 +582,7 @@ customElements.define('modal-dialog', ModalDialog);
 //     });
 //   }
 // }
-customElements.define('modal-opener', ModalOpener);
+// customElements.define('modal-opener', ModalOpener);
 
 class DeferredMedia extends HTMLElement {
   constructor() {
