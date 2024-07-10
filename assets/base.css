@@ -3724,7 +3724,8 @@ a {
 }
 
 .size-overlay {
-  position: absolute;
+  position: fixed;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
