@@ -376,7 +376,7 @@
       <div class="menu-main">
         {% for item in main_menu.links %}
           <div class="menu-wrapper">
-            <a href="{{ item.url }}">{{ item.title }}</a>
+            <a class="menu-main-title" href="{{ item.url }}">{{ item.title }}</a>
             <ul>
               {% for subitem in item.links %}
                 <li>
