@@ -3695,3 +3695,7 @@ a {
   font-weight: 400;
   color: #999999;
 }
+
+.size-span {
+  text-decoration: underline;
+}
