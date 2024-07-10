@@ -3654,6 +3654,11 @@ svg.feather {
   align-items: flex-start;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 li {
   list-style: none;
 }
