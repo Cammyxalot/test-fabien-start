@@ -359,13 +359,13 @@
         <div>
           <a></a>
 
-          <ul>
-            {% for item in main_menu.links %}
+          {% for item in main_menu.links %}
+            <ul>
               <li>
                 <a href="{{ item.url }}">{{ item.title }}</a>
               </li>
-            {% endfor %}
-          </ul>
+            </ul>
+          {% endfor %}
         </div>
       </div>
     </div>
