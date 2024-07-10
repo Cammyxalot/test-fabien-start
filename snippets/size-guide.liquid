@@ -1,0 +1,27 @@
+<div class="size-wrapper">
+  <span class="size-span">Guide des tailles</span>
+  <div class="size-guide-pop-over">
+    <button class="pop-over-close">
+      {% render 'custom-close' %}
+    </button>
+    <img height="" width="" src="https://cdn.shopify.com/s/files/1/0601/7115/7755/files/image_61.png?v=1680528701">
+    <span class="size-guide-title">Guide des tailles</span>
+  </div>
+</div>
+
+<script>
+  const SIZE_SPAN = '.size-span';
+  const SIZE_GUIDE_POP_OVER = '.size-guide-pop-over';
+  const POP_OVER_CLOSE = '.pop-over-close';
+
+  const sizeSpan = document.querySelector(SIZE_SPAN);
+  const sizeGuidePopOver = document.querySelector(SIZE_GUIDE_POP_OVER);
+  const popOverClose = document.querySelector(POP_OVER_CLOSE);
+  sizeSpan.addEventListener('click', () => {
+    sizeGuidePopOver.classList.add('active');
+
+    popOverClose.addEventListener('click', () => {
+      sizeGuidePopOver.classList.remove('active');
+    });
+  });
+</script>
