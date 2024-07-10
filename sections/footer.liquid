@@ -353,39 +353,37 @@
     {% assign main_menu = linklists['menu-footer'] %}
 
     <div class="subfooter-main">
-      <div>
-        <div class="social-wrapper">
-          <img
-            height="70"
-            width="140"
-            src="https://cdn.shopify.com/s/files/1/0601/7115/7755/files/w3-logo.svg?v=1720540712"
-          >
-          <ul class="social-list">
-            <li>
-              {% render 'custom-facebook' %}
-            </li>
-            <li>
-              {% render 'custom-linkedin' %}
-            </li>
-            <li>
-              {% render 'custom-instagram' %}
-            </li>
-          </ul>
-        </div>
-        <div class="menu-main">
-          {% for item in main_menu.links %}
-            <div class="menu-wrapper">
-              <a href="{{ item.url }}">{{ item.title }}</a>
-              <ul>
-                {% for subitem in item.links %}
-                  <li>
-                    <a href="{{ subitem.url }}">{{ subitem.title }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          {% endfor %}
-        </div>
+      <div class="social-wrapper">
+        <img
+          height="70"
+          width="140"
+          src="https://cdn.shopify.com/s/files/1/0601/7115/7755/files/w3-logo.svg?v=1720540712"
+        >
+        <ul class="social-list">
+          <li>
+            {% render 'custom-facebook' %}
+          </li>
+          <li>
+            {% render 'custom-linkedin' %}
+          </li>
+          <li>
+            {% render 'custom-instagram' %}
+          </li>
+        </ul>
+      </div>
+      <div class="menu-main">
+        {% for item in main_menu.links %}
+          <div class="menu-wrapper">
+            <a href="{{ item.url }}">{{ item.title }}</a>
+            <ul>
+              {% for subitem in item.links %}
+                <li>
+                  <a href="{{ subitem.url }}">{{ subitem.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
       </div>
     </div>
     <div class="subfooter-wrapper">
