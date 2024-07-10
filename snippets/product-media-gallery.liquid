@@ -74,7 +74,7 @@
               data-media-id="{{ section.id }}-{{ featured_media.id }}"
             >
               {%- assign media_position = 1 -%}
-              {% render 'custom-thumbnail',
+              {% render 'product-thumbnail',
                 media: featured_media,
                 media_count: media_count,
                 position: media_position,
@@ -105,7 +105,7 @@
                     assign lazy_load = true
                   endif
                 -%}
-                {% render 'product-thumbnail',
+                {% render 'custom-thumbnail',
                   media: media,
                   media_count: media_count,
                   position: media_position,
