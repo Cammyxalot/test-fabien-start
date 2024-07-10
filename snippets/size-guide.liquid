@@ -8,3 +8,13 @@
     <span class="size-guide-title">Guide des tailles</span>
   </div>
 </div>
+
+<script>
+  const SIZE_SPAN = '.size-span';
+  const SIZE_GUIDE_POP_OVER = '.size-guide-pop-over';
+  const POP_OVER_CLOSE = '.pop-over-close';
+
+  document.querySelector(SIZE_SPAN).addEventListener('click', () => {
+    SIZE_GUIDE_POP_OVER.classList.toggle('active');
+  });
+</script>
