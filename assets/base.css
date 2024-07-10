@@ -3664,6 +3664,9 @@ svg.feather {
     padding: 0;
   }
 
+  .menu-main {
+    display: none;
+  }
 }
 
 .menu-wrapper {
