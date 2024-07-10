@@ -377,9 +377,12 @@
 </media-gallery>
 
 <script>
-  const galleryWrapper = document.querySelector('.custom-gallery-wrapper');
-  const rightUl = galleryWrapper.querySelector('.custom-gallery:last-child ul');
-  const leftUl = galleryWrapper.querySelector('.custom-gallery:first-child ul');
+  const GALLERY_WRAPPER = '.custom-gallery-wrapper';
+  const RIGHT_UL = '.custom-gallery:last-child ul';
+  const LEFT_UL = '.custom-gallery:first-child ul';
+  const galleryWrapper = document.querySelector(GALLERY_WRAPPER);
+  const rightUl = galleryWrapper.querySelector(RIGHT_UL);
+  const leftUl = galleryWrapper.querySelector(LEFT_UL);
   const rightPhotos = rightUl.querySelectorAll('li');
   const leftPhotos = leftUl.querySelectorAll('li');
   leftPhotos.forEach((leftPhoto) => {
