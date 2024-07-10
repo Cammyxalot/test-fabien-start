@@ -3763,6 +3763,8 @@ a {
   padding: 0 1rem;
 }
 
-.subfooter-element:last-child {
-  display: none;
+@media screen and (max-width: 990px) {
+  .subfooter-element:last-child {
+    display: none;
+  }
 }
