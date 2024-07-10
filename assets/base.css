@@ -3649,6 +3649,12 @@ svg.feather {
   justify-content: space-around;
 }
 
+.subfooter-main {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .menu-wrapper {
   display: flex;
   flex-direction: column;
