@@ -3701,3 +3701,16 @@ a {
   font-size: 12px;
   font-weight: 400;
 }
+
+.size-guide-pop-over {
+  display: block;
+  position: absolute;
+  top: -50%;
+  right: 50%;
+  margin-top: 16px;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  animation: popup 0.5s ease-in-out both 0.7s;
+}
