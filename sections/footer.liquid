@@ -352,7 +352,7 @@
         {%- endif -%}
       </div>
     </div>
-    {% assign main_menu = linklists['menu-footer'] %}
+    {% assign main_menu = section.settings['menu-footer'] %}
 
     <div class="subfooter-main">
       <div class="social-wrapper">
@@ -541,6 +541,11 @@
       "type": "header",
       "content": "t:sections.footer.settings.header__1.content",
       "info": "t:sections.footer.settings.header__1.info"
+    },
+    {
+      "type": "link_list",
+      "id": "menu-footer",
+      "label": "Menu-footer"
     },
     {
       "type": "checkbox",
