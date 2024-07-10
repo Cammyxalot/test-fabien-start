@@ -3616,3 +3616,10 @@ svg.feather {
 span.product__media-icon.motion-reduce.quick-add-hidden.product__media-icon--lightbox {
   display: none;
 }
+
+.subfooter-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
+}
