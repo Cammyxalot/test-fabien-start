@@ -3591,6 +3591,10 @@ svg.feather {
   display: flex;
 }
 
-.custom-gallery ul {
+.custom-gallery {
   flex: 1
+}
+
+.custom-gallery ul li {
+  width: 100%;
 }
