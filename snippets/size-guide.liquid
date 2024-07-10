@@ -19,5 +19,9 @@
   const popOverClose = document.querySelector(POP_OVER_CLOSE);
   document.querySelector(SIZE_SPAN).addEventListener('click', () => {
     sizeGuidePopOver.classList.add('active');
+
+    document.querySelector(popOverClose).addEventListener('click', () => {
+      sizeGuidePopOver.classList.remove('active');
+    });
   });
 </script>
