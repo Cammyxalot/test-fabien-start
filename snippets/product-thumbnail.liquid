@@ -56,7 +56,7 @@
   <noscript>
     {%- if media.media_type == 'video' or media.media_type == 'external_video' -%}
       <span class="product__media-icon motion-reduce quick-add-hidden">{% render 'icon-play' %}</span>
-      <div class="product__media media" data-fancybox="gallery">
+      <div class="product__media media">
         {{
           media.preview_image
           | image_url: width: 1946
@@ -69,6 +69,7 @@
       <a
         href="{% if media.media_type == 'video' %}{{ media.sources[1].url }}{% else %}{{ media | external_video_url }}{% endif %}"
         class="product__media-toggle"
+        data-fancybox="gallery"
       >
         <span class="visually-hidden">
           {{- 'products.product.video_exit_message' | t: title: product.title | escape -}}
