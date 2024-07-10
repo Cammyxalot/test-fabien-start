@@ -3608,6 +3608,8 @@ svg.feather {
 
   .slider {
     flex-direction: row;
+    justify-content: center;
+    gap: 0;
   }
 }
 
