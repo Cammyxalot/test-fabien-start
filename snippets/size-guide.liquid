@@ -14,7 +14,10 @@
   const SIZE_GUIDE_POP_OVER = '.size-guide-pop-over';
   const POP_OVER_CLOSE = '.pop-over-close';
 
+  const sizeSpan = document.querySelector(SIZE_SPAN);
+  const sizeGuidePopOver = document.querySelector(SIZE_GUIDE_POP_OVER);
+  const popOverClose = document.querySelector(POP_OVER_CLOSE);
   document.querySelector(SIZE_SPAN).addEventListener('click', () => {
-    SIZE_GUIDE_POP_OVER.classList.add('active');
+    sizeGuidePopOver.classList.add('active');
   });
 </script>
