@@ -3663,6 +3663,13 @@ svg.feather {
   align-items: flex-start;
 }
 
+.menu-main-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+
 ul {
   padding: 0;
   margin: 0;
