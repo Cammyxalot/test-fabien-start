@@ -3623,3 +3623,8 @@ span.product__media-icon.motion-reduce.quick-add-hidden.product__media-icon--lig
   align-items: center;
   padding: 0 1rem;
 }
+
+.subfooter-element {
+  display: flex;
+  justify-content: space-between;
+}
