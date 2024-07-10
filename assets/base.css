@@ -3762,3 +3762,7 @@ a {
 .footer__content-bottom {
   padding: 0 1rem;
 }
+
+.subfooter-element:last-child {
+  display: none;
+}
