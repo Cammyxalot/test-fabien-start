@@ -358,7 +358,14 @@
         <ul></ul>
         <div>
           <a></a>
-          <ul></ul>
+
+          <ul>
+            {% for item in main_menu.links %}
+              <li>
+                <a href="{{ item.url }}">{{ item.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
         </div>
       </div>
     </div>
