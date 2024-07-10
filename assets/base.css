@@ -3606,7 +3606,7 @@ svg.feather {
     flex-direction: column-reverse;
   }
 
-  .custom-gallery-wrapper:first-child {
+  .custom-gallery-wrapper:first-child ul {
     flex-direction: row;
   }
 }
