@@ -3699,6 +3699,7 @@ a {
   text-decoration: underline;
   font-size: 12px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .size-guide-pop-over {
