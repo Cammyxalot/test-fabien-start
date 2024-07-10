@@ -3771,4 +3771,8 @@ a {
   .subfooter-element {
     margin-top: 2rem;
   }
+
+  .subfooter-element {
+    font-size: 10px;
+  }
 }
