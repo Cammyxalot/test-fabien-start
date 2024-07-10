@@ -372,16 +372,18 @@
             </li>
           </ul>
         </div>
-        <div class="menu-wrapper">
+        <div>
           {% for item in main_menu.links %}
-            <a href="{{ item.url }}">{{ item.title }}</a>
-            <ul>
-              {% for subitem in item.links %}
-                <li>
-                  <a href="{{ subitem.url }}">{{ subitem.title }}</a>
-                </li>
-              {% endfor %}
-            </ul>
+            <div class="menu-wrapper">
+              <a href="{{ item.url }}">{{ item.title }}</a>
+              <ul>
+                {% for subitem in item.links %}
+                  <li>
+                    <a href="{{ subitem.url }}">{{ subitem.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
           {% endfor %}
         </div>
       </div>
