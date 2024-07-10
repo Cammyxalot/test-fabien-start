@@ -3626,5 +3626,5 @@ span.product__media-icon.motion-reduce.quick-add-hidden.product__media-icon--lig
 
 .subfooter-element {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
