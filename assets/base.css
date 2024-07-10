@@ -3626,6 +3626,7 @@ span.product__media-icon.motion-reduce.quick-add-hidden.product__media-icon--lig
 
 .subfooter-wrapper li {
   list-style: none;
+  text-decoration: none;
 }
 
 .subfooter-element {
