@@ -15,6 +15,7 @@
       "type": "footer",
       "settings": {
         "color_scheme": "scheme-1",
+        "menu-footer": "menu-footer",
         "newsletter_enable": true,
         "newsletter_heading": "Inscrivez-vous à notre newsletter",
         "newsletter_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi augue dui, ornare mattis hendrerit nec, consequat",
