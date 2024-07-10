@@ -386,7 +386,7 @@
   leftPhotos.forEach((leftPhoto) => {
     leftPhoto.addEventListener('click', function () {
       const order = leftPhoto.getAttribute('data-order');
-
+      console.log('order', order);
       // Remove 'is-active' class from all right photos
       rightPhotos.forEach((photo) => {
         photo.classList.remove('is-active');
