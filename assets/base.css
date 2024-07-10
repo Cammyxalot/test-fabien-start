@@ -3584,6 +3584,10 @@ svg.feather {
   border-radius: 45px;
 }
 
+span.product__media-icon.motion-reduce.quick-add-hidden.product__media-icon--lightbox {
+  display: none;
+}
+
 .slider {
   display: flex;
   flex-direction: column;
@@ -3610,10 +3614,6 @@ svg.feather {
 }
 
 .custom-gallery:last-child ul li:not(.is-active) {
-  display: none;
-}
-
-span.product__media-icon.motion-reduce.quick-add-hidden.product__media-icon--lightbox {
   display: none;
 }
 
