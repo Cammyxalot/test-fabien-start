@@ -34,6 +34,11 @@
           "settings": {
           }
         },
+        "size_guide_iWWTKn": {
+          "type": "size-guide",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -74,6 +79,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "size_guide_iWWTKn",
         "buy_buttons",
         "collapsible_tab_HACiMc",
         "collapsible_tab_gh4tLP",
