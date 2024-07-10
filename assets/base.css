@@ -3646,6 +3646,7 @@ svg.feather {
 
 .menu-main {
   display: flex;
+  justify-content: space-around;
 }
 
 .menu-wrapper {
