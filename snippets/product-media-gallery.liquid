@@ -383,19 +383,20 @@
   const rightPhotos = rightUl.querySelectorAll('li');
   const leftPhotos = leftUl.querySelectorAll('li');
 
-  leftUl.addEventListener('click', function (event) {
-    const order = event.target.getAttribute('data-order');
-    console.log(event.target);
-    console.log('order', order);
-    // Remove 'is-active' class from all right photos
-    rightPhotos.forEach((photo) => {
-      photo.classList.remove('is-active');
-    });
+  leftPhotos.forEach((leftPhoto) => {
+    leftPhoto.addEventListener('click', function () {
+      const order = leftPhoto.getAttribute('data-order');
 
-    // Add 'is-active' class to the clicked corresponding right photo
-    const activePhoto = rightUl.querySelector(`li[data-order="${order}"]`);
-    if (activePhoto) {
-      activePhoto.classList.add('is-active');
-    }
+      // Remove 'is-active' class from all right photos
+      rightPhotos.forEach((photo) => {
+        photo.classList.remove('is-active');
+      });
+
+      // Add 'is-active' class to the clicked corresponding right photo
+      const activePhoto = document.querySelector(`#right-ul li[data-order="${order}"]`);
+      if (activePhoto) {
+        activePhoto.classList.add('is-active');
+      }
+    });
   });
 </script>
