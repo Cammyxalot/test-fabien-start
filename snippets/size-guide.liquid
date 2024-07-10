@@ -17,10 +17,10 @@
   const sizeSpan = document.querySelector(SIZE_SPAN);
   const sizeGuidePopOver = document.querySelector(SIZE_GUIDE_POP_OVER);
   const popOverClose = document.querySelector(POP_OVER_CLOSE);
-  document.querySelector(SIZE_SPAN).addEventListener('click', () => {
+  sizeSpan.addEventListener('click', () => {
     sizeGuidePopOver.classList.add('active');
 
-    document.querySelector(popOverClose).addEventListener('click', () => {
+    popOverClose.addEventListener('click', () => {
       sizeGuidePopOver.classList.remove('active');
     });
   });
