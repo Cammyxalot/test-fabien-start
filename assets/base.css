@@ -3624,6 +3624,10 @@ span.product__media-icon.motion-reduce.quick-add-hidden.product__media-icon--lig
   padding: 0 1rem;
 }
 
+.subfooter-wrapper li {
+  list-style: none;
+}
+
 .subfooter-element {
   display: flex;
   gap: 30px;
