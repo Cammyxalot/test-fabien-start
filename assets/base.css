@@ -3804,6 +3804,7 @@ a {
 
 .glide__arrow {
   border-radius: 50% !important;
+  border: 1px solid black !important;
 }
 
 .glide__arrow svg {
