@@ -3830,7 +3830,7 @@ a {
 
 @media screen and (max-width: 750px) {
   .visible-mobile {
-    display: flex !important;
+    display: block !important;
   }
 }
 
