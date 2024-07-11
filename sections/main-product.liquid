@@ -2115,17 +2115,7 @@
 {% endschema %}
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const LIKE_ADD = '.like-add';
-    const likeAdd = document.querySelector(LIKE_ADD);
-    console.log(likeAdd);
-    const likeAddIcon = likeAdd.querySelector('i');
-    likeAdd.addEventListener('click', () => {
-      console.log('hi');
-      likeAddIcon.setAttribute('fill', 'black');
-      const filledIcon = likeAddIcon.cloneNode(true);
-      console.log(filledIcon.parentNode);
-      likeAddIcon.parentNode.replaceChild(filledIcon, likeAddIcon);
-    });
-  });
+  const LIKE_ADD = '.like-add';
+  const likeAdd = document.querySelector(LIKE_ADD);
+  const likeAddIcon = likeAdd.querySelector('i');
 </script>
