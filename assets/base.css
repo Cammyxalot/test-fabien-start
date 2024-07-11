@@ -3823,6 +3823,10 @@ a {
   }
 }
 
+.visible-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 750px) {
   .visible-mobile {
     display: flex !important;
