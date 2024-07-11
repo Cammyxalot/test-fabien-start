@@ -3836,6 +3836,10 @@ a {
   .visible-mobile {
     display: block !important;
   }
+
+  .visible-mobile-flex {
+    display: flex !important;
+  }
 }
 
 .form__label {
