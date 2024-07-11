@@ -2133,6 +2133,7 @@
   const filledAddButton = likeAdd.querySelector(HEART_HIDDEN);
   console.log(likeAddButton);
   likeAdd.addEventListener('click', () => {
+    console.log('hi');
     likeAddButton.classList.toggle('hidden');
     filledAddButton.classList.toggle('hidden');
   });
