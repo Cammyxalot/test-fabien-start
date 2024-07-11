@@ -2117,8 +2117,10 @@
 <script>
   const LIKE_ADD = '.like-add';
   const likeAdd = document.querySelector(LIKE_ADD);
+  console.log(likeAdd);
   const likeAddIcon = likeAdd.querySelector('i');
   likeAdd.addEventListener('click', () => {
+    console.log('hi');
     likeAddIcon.setAttribute('fill', 'black');
   });
 </script>
