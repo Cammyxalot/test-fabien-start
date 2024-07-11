@@ -99,7 +99,14 @@
                     <h1>{{ product.metafields.descriptors.title.value | escape }}</h1>
                     <button
                       class="like-add"
-                      onclick=" document.querySelector('.heart').toggleAttribute('fill','black')"
+                      onclick="
+                        document.querySelector('.heart')
+                                              if (heart.getAttribute('fill') === 'black') {
+                          heart.setAttribute('fill', 'red');
+                        } else {
+                          heart.setAttribute('fill', 'black');
+                        }
+                      "
                     >
                       {% render 'custom-heart' %}
                     </button>
