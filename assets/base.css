@@ -3821,3 +3821,9 @@ a {
     display: block;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .visible-mobile {
+    display: flex !important;
+  }
+}
