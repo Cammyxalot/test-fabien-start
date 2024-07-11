@@ -97,7 +97,10 @@
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <div class="title-subwrapper">
                     <h1>{{ product.metafields.descriptors.title.value | escape }}</h1>
-                    <button class="like-add" onclick=" document.querySelector('heart').toggleAttribute('fill','black')">
+                    <button
+                      class="like-add"
+                      onclick=" document.querySelector('.heart').toggleAttribute('fill','black')"
+                    >
                       {% render 'custom-heart' %}
                     </button>
                   </div>
