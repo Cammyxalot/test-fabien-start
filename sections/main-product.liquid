@@ -2122,6 +2122,7 @@
   likeAdd.addEventListener('click', () => {
     console.log('hi');
     likeAddIcon.setAttribute('fill', 'black');
-    console.log(likeAddIcon);
+    const filledIcon = likeAddIcon.cloneNode(true);
+    likeAddIcon.parentNode.replaceChild(filledIcon, likeAddIcon);
   });
 </script>
