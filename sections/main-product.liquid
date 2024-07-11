@@ -99,6 +99,7 @@
                     <h1>{{ product.metafields.descriptors.title.value | escape }}</h1>
                     <button class="like-add">
                       {% render 'custom-heart' %}
+                      {% render 'custom-filled-heart' %}
                     </button>
                   </div>
                   <a href="{{ product.url }}" class="product__title">
