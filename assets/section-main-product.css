@@ -1521,3 +1521,9 @@ a.product__text {
     border: none;
   }
 }
+
+.accordion__content p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #2F2F2F;
+}
