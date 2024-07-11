@@ -98,17 +98,7 @@
                   <div class="title-subwrapper">
                     <h1>{{ product.metafields.descriptors.title.value | escape }}</h1>
                     <button class="like-add">
-                      <i
-                        class="heart"
-                        data-feather="heart"
-                        stroke-width="2"
-                      ></i>
-                      <i
-                        class="heart-hidden hidden"
-                        data-feather="heart"
-                        stroke-width="2"
-                        fill="black"
-                      ></i>
+                      {% render 'custom-heart' %}
                     </button>
                   </div>
                   <a href="{{ product.url }}" class="product__title">
