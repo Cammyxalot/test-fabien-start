@@ -80,6 +80,10 @@ variant-selects {
   border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
 }
 
+.product-form__input--pill input[type='radio']+label.size-pills {
+  border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
+}
+
 .product-form__input--pill input[type='radio']+label:not(:last-child) {
   margin-right: 20px;
 }
