@@ -97,7 +97,9 @@
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <div class="title-subwrapper">
                     <h1>{{ product.metafields.descriptors.title.value | escape }}</h1>
-                    {% render 'custom-heart' %}
+                    <button class="like-add">
+                      {% render 'custom-heart' %}
+                    </button>
                   </div>
                   <a href="{{ product.url }}" class="product__title">
                     <h2 class="h1">
@@ -2111,4 +2113,3 @@
   ]
 }
 {% endschema %}
-
