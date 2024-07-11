@@ -3828,6 +3828,10 @@ a {
   display: none;
 }
 
+.footer__content-bottom {
+  padding: 0 2rem;
+}
+
 @media screen and (max-width: 750px) {
   .visible-mobile {
     display: block !important;
