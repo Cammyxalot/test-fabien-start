@@ -2113,3 +2113,12 @@
   ]
 }
 {% endschema %}
+
+<script>
+  const LIKE_ADD = '.like-add';
+  const likeAdd = document.querySelector(LIKE_ADD);
+  const likeAddIcon = likeAdd.querySelector('.icon');
+  likeAdd.addEventListener('click', () => {
+    likeAddIcon.classList.toggle('active');
+  });
+</script>
