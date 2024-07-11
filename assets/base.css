@@ -3802,9 +3802,13 @@ a {
   display: none;
 }
 
+.glide__arrow {
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 750px) {
   slider-component {
-    display: none;
+    display: none !important;
   }
 
   .glide {
