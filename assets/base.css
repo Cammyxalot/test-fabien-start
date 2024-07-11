@@ -3849,3 +3849,7 @@ a {
   text-transform: uppercase;
   color: black;
 }
+
+.heart-hidden {
+  display: none;
+}
