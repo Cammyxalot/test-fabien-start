@@ -382,6 +382,8 @@
           {%- if media.media_type == 'image' -%}
             <li class="glide__slide">
               <img
+                width=""
+                height=""
                 src="{{ media.preview_image | image_url: width: 800 }}"
                 alt="{{ media.alt | escape }}"
                 class="product__media-image"
