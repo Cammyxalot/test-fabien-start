@@ -375,7 +375,28 @@
     </slider-component>
   {%- endif -%}
 </media-gallery>
-
+<!-- glide.js snippets - -->
+<div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      {%- for media in product.media -%}
+        {%- if media.media_type == 'image' -%}
+          <li class="glide__slide">
+            <img
+              src="{{ media.preview_image | image_url: width: 800 }}"
+              alt="{{ media.alt | escape }}"
+              class="product__media-image"
+            >
+          </li>
+        {%- endif -%}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+  </div>
+</div>
 <script>
   const galleryWrapper = document.querySelector('.custom-gallery-wrapper');
   const rightUl = galleryWrapper.querySelector('.custom-gallery:last-child ul');
