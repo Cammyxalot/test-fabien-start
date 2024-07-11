@@ -97,17 +97,7 @@
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <div class="title-subwrapper">
                     <h1>{{ product.metafields.descriptors.title.value | escape }}</h1>
-                    <button
-                      class="like-add"
-                      onclick="
-                        document.querySelector('.heart')
-                          if (heart.getAttribute('fill') === 'black') {
-                            heart.setAttribute('fill', 'none');
-                        } else {
-                            heart.setAttribute('fill', 'black');
-                        }
-                      "
-                    >
+                    <button class="like-add">
                       {% render 'custom-heart' %}
                     </button>
                   </div>
