@@ -2116,15 +2116,13 @@
 {% endschema %}
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const LIKE_ADD = '.like-add';
-    const likeAdd = document.querySelector(LIKE_ADD);
-    const likeAddIcon = likeAdd.querySelector('i:first-child');
-    console.log('likeAddIcon', likeAddIcon);
-    const filledAddIcon = likeAdd.querySelector('heart-hidden');
-    likeAdd.addEventListener('click', () => {
-      likeAddIcon.classList.toggle('hidden');
-      filledAddIcon.classList.toggle('hidden');
-    });
+  const LIKE_ADD = '.like-add';
+  const likeAdd = document.querySelector(LIKE_ADD);
+  const likeAddIcon = likeAdd.querySelector('i');
+  console.log('likeAddIcon', likeAddIcon);
+  const filledAddIcon = likeAdd.querySelector('heart-hidden');
+  likeAdd.addEventListener('click', () => {
+    likeAddIcon.classList.toggle('hidden');
+    filledAddIcon.classList.toggle('hidden');
   });
 </script>
